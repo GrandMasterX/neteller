@@ -19,4 +19,3 @@ $ip = $deposit->getIP();
 var_dump($result);
 var_dump($errors);
 var_dump($ip);
-?>

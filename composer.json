@@ -1,5 +1,5 @@
 {
-	"name": "grandmasterx/nettelerapi",
+	"name": "grandmasterx/netteler",
 	"description": "Neteller API",
 	"type": "library",
 	"authors": [
@@ -16,6 +16,7 @@
 		"php",
 		"payment"
 	],
+	"license": "MIT Public License",
 	"require": {
 		"php": ">=5.4.0"
 	},
