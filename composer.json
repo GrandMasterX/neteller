@@ -1,0 +1,27 @@
+{
+	"name": "grandmasterx/nettelerapi",
+	"description": "Neteller API",
+	"type": "library",
+	"authors": [
+		{
+			"name": "GrandMasterX",
+			"email": "zgrandmasterz@gmail.com",
+			"homepage": "https://github.com/GrandMasterX/nettelerapi"
+		}
+	],
+	"keywords": [
+		"omnipay",
+		"neteller",
+		"api",
+		"php",
+		"payment"
+	],
+	"require": {
+		"php": ">=5.4.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"grandmasterx\\neteller\\api\\": "api/"
+		}
+	}
+}
