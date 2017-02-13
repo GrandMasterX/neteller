@@ -5,7 +5,7 @@ namespace grandmasterx\neteller\api;
  * Class CancelPlan
  * @package grandmasterx\neteller\api
  */
-class CancelPlan extends NetellerAPI
+class CancelPlan extends NetellerApi
 {
     /**
      * @var

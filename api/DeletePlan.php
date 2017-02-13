@@ -5,7 +5,7 @@ namespace grandmasterx\neteller\api;
  * Class DeletePlan
  * @package grandmasterx\neteller\api
  */
-class DeletePlan extends NetellerAPI
+class DeletePlan extends NetellerApi
 {
 
     /**

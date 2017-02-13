@@ -5,7 +5,7 @@ namespace grandmasterx\neteller\api;
  * Class ListPlans
  * @package grandmasterx\neteller\api
  */
-class ListPlans extends NetellerAPI
+class ListPlans extends NetellerApi
 {
 
     /**

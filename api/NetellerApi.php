@@ -2,10 +2,10 @@
 namespace grandmasterx\neteller\api;
 
 /**
- * Class NetellerAPI
+ * Class NetellerApi
  * @package grandmasterx\neteller\api
  */
-class NetellerAPI
+class NetellerApi
 {
 
     /**

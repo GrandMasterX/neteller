@@ -5,7 +5,7 @@ namespace grandmasterx\neteller\api;
  * Class CreateOrder
  * @package grandmasterx\neteller\api
  */
-class CreateOrder extends NetellerAPI
+class CreateOrder extends NetellerApi
 {
 
     /**

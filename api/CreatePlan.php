@@ -5,7 +5,7 @@ namespace grandmasterx\neteller\api;
  * Class CreatePlan
  * @package grandmasterx\neteller\api
  */
-class CreatePlan extends NetellerAPI
+class CreatePlan extends NetellerApi
 {
 
     /**

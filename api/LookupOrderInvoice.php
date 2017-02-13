@@ -5,7 +5,7 @@ namespace grandmasterx\neteller\api;
  * Class LookupOrderInvoice
  * @package grandmasterx\neteller\api
  */
-class LookupOrderInvoice extends NetellerAPI
+class LookupOrderInvoice extends NetellerApi
 {
     /**
      * @var

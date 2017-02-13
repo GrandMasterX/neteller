@@ -5,7 +5,7 @@ namespace grandmasterx\neteller\api;
  * Class WebhookHandler
  * @package grandmasterx\neteller\api
  */
-class WebhookHandler extends NetellerAPI
+class WebhookHandler extends NetellerApi
 {
 
     /**

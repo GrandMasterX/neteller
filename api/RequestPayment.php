@@ -5,7 +5,7 @@ namespace grandmasterx\neteller\api;
  * Class RequestPayment
  * @package grandmasterx\neteller\api
  */
-class RequestPayment extends NetellerAPI
+class RequestPayment extends NetellerApi
 {
 
     /**
