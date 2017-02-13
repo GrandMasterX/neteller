@@ -1,12 +1,12 @@
 {
-	"name": "grandmasterx/netteler",
+	"name": "grandmasterx/neteller",
 	"description": "Neteller API",
 	"type": "library",
 	"authors": [
 		{
 			"name": "GrandMasterX",
 			"email": "zgrandmasterz@gmail.com",
-			"homepage": "https://github.com/GrandMasterX/nettelerapi"
+			"homepage": "https://github.com/GrandMasterX/neteller"
 		}
 	],
 	"keywords": [
