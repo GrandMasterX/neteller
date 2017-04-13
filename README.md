@@ -751,33 +751,201 @@ Example
 Test Accounts <a name="TestAccounts"></a>
 ------------
 
-Currency  Account ID    Email Address                 Secure ID Password
-AED       451323763077  netellertest_AED@neteller.com 315508    NTt3st1!
-AUD       451823760529  netellertest_AUD@neteller.com 521652    NTt3st1!
-BGN       450424149137  netellertest_BGN@neteller.com 354380    NTt3st1!
-BRL       452124231445  netellertest_BRL@neteller.com 907916    NTt3st1!
-CAD       455781454840  netellertest_CAD@neteller.com 755608    NTt3st1!
-CHF       452324249609  netellertest_CHF@neteller.com 372993    NTt3st1!
-DKK       459734233011  netellertest_DKK@neteller.com 856751    NTt3st1!
-EUR       453501020503  netellertest_EUR@neteller.com 908379    NTt3st1!
-GBP       458591047553  netellertest_GBP@neteller.com 411392    NTt3st1!
-HUF       450824149649  netellertest_HUF@neteller.com 363552    NTt3st1!
-INR       450824016049  netellertest_INR@neteller.com 332880    NTt3st1!
-JPY       452604251512  netellertest_JPY@neteller.com 490055    NTt3st1!
-MAD       453123727913  netellertest_MAD@neteller.com 796289    NTt3st1!
-MXN       456444237546  netellertest_MXN@neteller.com 878408    NTt3st1!
-MYR       452724116521  netellertest_MYR@neteller.com 108145    NTt3st1!
-NGN       450924006321  netellertest_NGN@neteller.com 205750    NTt3st1!
-NOK       455394172769  netellertest_NOK@neteller.com 418852    NTt3st1!
-PLN       451823629489  netellertest_PLN@neteller.com 654091    NTt3st1!
-RON       450424018097  netellertest_RON@neteller.com 860647    NTt3st1!
-RUB       455121038904  netellertest_RUB@neteller.com 888470    NTt3st1!
-SEK       453313818311  netellertest_SEK@neteller.com 173419    NTt3st1!
-SGD       451523741861  netellertest_SGD@neteller.com 316938    NTt3st1!
-TND       453523858985  netellertest_TND@neteller.com 588931    NTt3st1!
-TWD       451723748785  netellertest_TWD@neteller.com 711009    NTt3st1!
-USD       454651018446  netellertest_USD@neteller.com 270955    NTt3st1!
-ZAR       453523842837  netellertest_ZAR@neteller.com 708904    NTt3st1!
+<table>
+<thead>
+<tr>
+<th>Currency</th>
+<th>Account ID</th>
+<th>Email Address</th>
+<th>Secure ID</th>
+<th>Password</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AED</td>
+<td>451323763077</td>
+<td>netellertest_AED@neteller.com</td>
+<td>315508</td>
+<td>NTt3st1!</td>
+</tr>
+<tr>
+<td>AUD</td>
+<td>451823760529</td>
+<td>netellertest_AUD@neteller.com</td>
+<td>521652</td>
+<td>NTt3st1!</td>
+</tr>
+<tr>
+<td>BGN</td>
+<td>450424149137</td>
+<td>netellertest_BGN@neteller.com</td>
+<td>354380</td>
+<td>NTt3st1!</td>
+</tr>
+<tr>
+<td>BRL</td>
+<td>452124231445</td>
+<td>netellertest_BRL@neteller.com</td>
+<td>907916</td>
+<td>NTt3st1!</td>
+</tr>
+<tr>
+<td>CAD</td>
+<td>455781454840</td>
+<td>netellertest_CAD@neteller.com</td>
+<td>755608</td>
+<td>NTt3st1!</td>
+</tr>
+<tr>
+<td>CHF</td>
+<td>452324249609</td>
+<td>netellertest_CHF@neteller.com</td>
+<td>372993</td>
+<td>NTt3st1!</td>
+</tr>
+<tr>
+<td>DKK</td>
+<td>459734233011</td>
+<td>netellertest_DKK@neteller.com</td>
+<td>856751</td>
+<td>NTt3st1!</td>
+</tr>
+<tr>
+<td>EUR</td>
+<td>453501020503</td>
+<td>netellertest_EUR@neteller.com</td>
+<td>908379</td>
+<td>NTt3st1!</td>
+</tr>
+<tr>
+<td>GBP</td>
+<td>458591047553</td>
+<td>netellertest_GBP@neteller.com</td>
+<td>411392</td>
+<td>NTt3st1!</td>
+</tr>
+<tr>
+<td>HUF</td>
+<td>450824149649</td>
+<td>netellertest_HUF@neteller.com</td>
+<td>363552</td>
+<td>NTt3st1!</td>
+</tr>
+<tr>
+<td>INR</td>
+<td>450824016049</td>
+<td>netellertest_INR@neteller.com</td>
+<td>332880</td>
+<td>NTt3st1!</td>
+</tr>
+<tr>
+<td>JPY</td>
+<td>452604251512</td>
+<td>netellertest_JPY@neteller.com</td>
+<td>490055</td>
+<td>NTt3st1!</td>
+</tr>
+<tr>
+<td>MAD</td>
+<td>453123727913</td>
+<td>netellertest_MAD@neteller.com</td>
+<td>796289</td>
+<td>NTt3st1!</td>
+</tr>
+<tr>
+<td>MXN</td>
+<td>456444237546</td>
+<td>netellertest_MXN@neteller.com</td>
+<td>878408</td>
+<td>NTt3st1!</td>
+</tr>
+<tr>
+<td>MYR</td>
+<td>452724116521</td>
+<td>netellertest_MYR@neteller.com</td>
+<td>108145</td>
+<td>NTt3st1!</td>
+</tr>
+<tr>
+<td>NGN</td>
+<td>450924006321</td>
+<td>netellertest_NGN@neteller.com</td>
+<td>205750</td>
+<td>NTt3st1!</td>
+</tr>
+<tr>
+<td>NOK</td>
+<td>455394172769</td>
+<td>netellertest_NOK@neteller.com</td>
+<td>418852</td>
+<td>NTt3st1!</td>
+</tr>
+<tr>
+<td>PLN</td>
+<td>451823629489</td>
+<td>netellertest_PLN@neteller.com</td>
+<td>654091</td>
+<td>NTt3st1!</td>
+</tr>
+<tr>
+<td>RON</td>
+<td>450424018097</td>
+<td>netellertest_RON@neteller.com</td>
+<td>860647</td>
+<td>NTt3st1!</td>
+</tr>
+<tr>
+<td>RUB</td>
+<td>455121038904</td>
+<td>netellertest_RUB@neteller.com</td>
+<td>888470</td>
+<td>NTt3st1!</td>
+</tr>
+<tr>
+<td>SEK</td>
+<td>453313818311</td>
+<td>netellertest_SEK@neteller.com</td>
+<td>173419</td>
+<td>NTt3st1!</td>
+</tr>
+<tr>
+<td>SGD</td>
+<td>451523741861</td>
+<td>netellertest_SGD@neteller.com</td>
+<td>316938</td>
+<td>NTt3st1!</td>
+</tr>
+<tr>
+<td>TND</td>
+<td>453523858985</td>
+<td>netellertest_TND@neteller.com</td>
+<td>588931</td>
+<td>NTt3st1!</td>
+</tr>
+<tr>
+<td>TWD</td>
+<td>451723748785</td>
+<td>netellertest_TWD@neteller.com</td>
+<td>711009</td>
+<td>NTt3st1!</td>
+</tr>
+<tr>
+<td>USD</td>
+<td>454651018446</td>
+<td>netellertest_USD@neteller.com</td>
+<td>270955</td>
+<td>NTt3st1!</td>
+</tr>
+<tr>
+<td>ZAR</td>
+<td>453523842837</td>
+<td>netellertest_ZAR@neteller.com</td>
+<td>708904</td>
+<td>NTt3st1!</td>
+</tr>
+</tbody>
+</table>
 
 
 Ips for whitelist <a name="IpsForWhitelist"></a>
