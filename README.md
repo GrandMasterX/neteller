@@ -951,6 +951,6 @@ Test Accounts <a name="TestAccounts"></a>
 Ips for whitelist <a name="IpsForWhitelist"></a>
 ------------------------------------------------
 
-5.62.88.97 – webhooks production
-5.62.88.64/27 – whole production IP range
-206.172.46.138 – webhooks Sandbox
+- **5.62.88.97 – webhooks production**
+- **5.62.88.64/27 – whole production IP range**
+- **206.172.46.138 – webhooks Sandbox**
