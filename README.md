@@ -29,7 +29,7 @@ The NETELLER PHP Library provides PHP developers an easy way to integrate the NE
 - [LookupSubscriptionInvoice Class](#LookupSubscriptionInvoice)
 - [LookupAllSubscriptionInvoices Class](#LookupAllSubscriptionInvoices)
 - [WebhookHandler Class](#WebhookHandler)
-- [Test Account](#Test Account)
+- [Test Account](#TestAccounts)
 - [Ips for whitelist](#IpsForWhitelist)
 
 Installation <a name="Installation"></a>
