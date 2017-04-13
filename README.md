@@ -29,13 +29,15 @@ The NETELLER PHP Library provides PHP developers an easy way to integrate the NE
 - [LookupSubscriptionInvoice Class](#LookupSubscriptionInvoice)
 - [LookupAllSubscriptionInvoices Class](#LookupAllSubscriptionInvoices)
 - [WebhookHandler Class](#WebhookHandler)
+- [Test Account](#TestAccount)
+- [Ips for whitelist](#IpsForWhitelist)
 
 Installation <a name="Installation"></a>
 ========================================
 
 Simply download and include the "NetellerAPI.php" file in your script.
 
- 
+
     include_once("NetellerAPI.php");
 
 
@@ -50,7 +52,7 @@ You need to define the configuration details using the following PHP constants:
 
 Example:
 
- 
+
     define('NETELLER_BASE_URL', 'https://test.api.neteller.com/');
     define('NETELLER_CLIENT_ID', 'AAABTAiQ9pKruN2Z');
     define('NETELLER_CLIENT_SECRET', '0.iSLQ7zzMinac6SbI62onxTdqEYFES1LXoI4paRFFz74.4yFz4Pr3BMIccXgQOb3Ea_FNG2Y');
@@ -82,7 +84,7 @@ Methods
 Example
 -------
 
- 
+
     $api = new NetellerAPI\NetellerAPI();
     $ip = $api->getIP();
     var_dump($ip);
@@ -90,7 +92,7 @@ Example
 
 It can also be used in the context of a child class:
 
- 
+
     $deposit = new NetellerAPI\RequestPayment();
     $deposit->setPaymentMethodValue('netellertest_USD@neteller.com')
             ->setVerificationCode(270955)
@@ -99,7 +101,7 @@ It can also be used in the context of a child class:
             ->setTransactionCurrency('USD');
     $result = $deposit->doRequest();
     $ip = $deposit->getIP();
-    
+
     var_dump($result);
     var_dump($ip);
 
@@ -124,7 +126,7 @@ Methods
 Example
 -------
 
- 
+
     $deposit = new NetellerAPI\RequestPayment();
     $deposit->setPaymentMethodValue('netellertest_USD@neteller.com')
             ->setVerificationCode(270955)
@@ -155,7 +157,7 @@ Methods
 Example
 -------
 
- 
+
     $withdrawal = new NetellerAPI\CreatePayment();
     $withdrawal->setPayeeProfileEmail('netellertest_USD@neteller.com')
                ->setTransactionAmount(1234)
@@ -183,7 +185,7 @@ Methods
 Example
 -------
 
- 
+
     $lookup = new NetellerAPI\LookupPayment();
     $lookup->setTransactionId('850430740226289')
            ->setExpand('customer');
@@ -230,7 +232,7 @@ Methods
 Example
 -------
 
- 
+
     $order = new NetellerAPI\CreateOrder();
     $order->setOrderMerchantRefId('adfiu1i23478172349o1')
           ->setOrderTotalAmount(2099)
@@ -306,7 +308,7 @@ Methods
 Example
 -------
 
- 
+
     $lookup = new NetellerAPI\LookupOrder();
     $lookup->setOrderId("ORD_1f21ca9d-e647-46bc-9dde-91c70632e587");
     $result = $lookup->doRequest();
@@ -329,7 +331,7 @@ Methods
 Example
 -------
 
- 
+
     $lookup = new NetellerAPI\LookupOrderInvoice();
     $lookup->setOrderId("ORD_5c0023d3-c928-4771-9016-1fc169283b0f")
            ->setExpand("customer,order");
@@ -371,7 +373,7 @@ Methods
 Example
 -------
 
- 
+
     $signup = new NetellerAPI\CreateCustomer();
     $signup->setEmail("john.smith@example.com")
            ->setFirstName("John")
@@ -418,7 +420,7 @@ Methods
 Example
 -------
 
- 
+
     $lookup = new NetellerAPI\LookupCustomer();
     $lookup->setCustomerId("453523712313")
            ->setRefreshToken("0.AgAAAU0yy4sHAAAAB1jwsOC9J7TBAYynTble-g2fdC-d.7xIAyXxQWsDaiLzjY4qimsqfyYU");
@@ -447,7 +449,7 @@ Methods
 Example
 -------
 
- 
+
     $plan = new NetellerAPI\CreatePlan();
     $plan->setPlanId("MONTHLYGREENPLAN")
          ->setPlanName("Sample Premier Monthly Membership")
@@ -475,7 +477,7 @@ Methods
 Example
 -------
 
- 
+
     $lookup = new NetellerAPI\LookupPlan();
     $lookup->setPlanId("MONTHLYGREENPLAN");
     $result = $lookup->doRequest();
@@ -497,7 +499,7 @@ Methods
 Example
 -------
 
- 
+
     $plan = new NetellerAPI\CancelPlan();
     $plan->setPlanId("MONTHLYGREENPLAN");
     $result = $plan->doRequest();
@@ -519,7 +521,7 @@ Methods
 Example
 -------
 
- 
+
     $plan = new NetellerAPI\DeletePlan();
     $plan->setPlanId("MONTHLYGREENPLAN");
     $result = $plan->doRequest();
@@ -542,7 +544,7 @@ Methods
 Example
 -------
 
- 
+
     $plans = new NetellerAPI\ListPlans();
     $plans->setLimit(10)
           ->setOffset(0);
@@ -573,7 +575,7 @@ Examples
 
 ### Using Authorization code
 
- 
+
     $subscription = new NetellerAPI\CreateSubscription();
     $subscription->setPlanId("MONTHLYGREENPLAN")
                  ->setAccountProfileEmail("netellertest_USD@neteller.com")
@@ -587,7 +589,7 @@ Examples
 
 ### Using Refresh token
 
- 
+
     $subscription = new NetellerAPI\CreateSubscription();
     $subscription->setPlanId("MONTHLYGREENPLAN")
                  ->setAccountProfileEmail("netellertest_USD@neteller.com")
@@ -615,7 +617,7 @@ Methods
 Example
 -------
 
- 
+
     $lookup = new NetellerAPI\LookupSubscription();
     $lookup->setSubscriptionId("180")
            ->setExpand("plan,customer");
@@ -638,7 +640,7 @@ Methods
 Example
 -------
 
- 
+
     $subscription = new NetellerAPI\CancelSubscription();
     $subscription->setSubscriptionId("181");
     $result = $subscription->doRequest();
@@ -661,7 +663,7 @@ Methods
 Example
 -------
 
- 
+
     $subscriptions = new NetellerAPI\ListSubscriptions();
     $subscriptions->setLimit(10)
                   ->setOffset(0);
@@ -686,7 +688,7 @@ Methods
 Example
 -------
 
- 
+
     $lookup = new NetellerAPI\LookupSubscriptionInvoice();
     $lookup->setSubscriptionId(166)
            ->setInvoiceNumber(42)
@@ -712,7 +714,7 @@ Methods
 Example
 -------
 
- 
+
     $lookup = new NetellerAPI\LookupAllSubscriptionInvoices();
     $lookup->setSubscriptionId(166)
            ->setLimit(10)
@@ -734,12 +736,53 @@ Methods
 Example
 -------
 
- 
+
     $webhook = new NetellerAPI\WebhookHandler();
     $webhook->handleRequest();
-    
+
     function payment_succeeded($data){
         $api = new NetellerAPI\NetellerAPI();
         $result = $api->getUrl($data->links[0]->url);
         //do something with the response here
     }
+
+
+
+Test Accounts <a name="TestAccounts"></a>
+------------
+
+Currency  Account ID    Email Address                 Secure ID Password
+AED       451323763077  netellertest_AED@neteller.com 315508    NTt3st1!
+AUD       451823760529  netellertest_AUD@neteller.com 521652    NTt3st1!
+BGN       450424149137  netellertest_BGN@neteller.com 354380    NTt3st1!
+BRL       452124231445  netellertest_BRL@neteller.com 907916    NTt3st1!
+CAD       455781454840  netellertest_CAD@neteller.com 755608    NTt3st1!
+CHF       452324249609  netellertest_CHF@neteller.com 372993    NTt3st1!
+DKK       459734233011  netellertest_DKK@neteller.com 856751    NTt3st1!
+EUR       453501020503  netellertest_EUR@neteller.com 908379    NTt3st1!
+GBP       458591047553  netellertest_GBP@neteller.com 411392    NTt3st1!
+HUF       450824149649  netellertest_HUF@neteller.com 363552    NTt3st1!
+INR       450824016049  netellertest_INR@neteller.com 332880    NTt3st1!
+JPY       452604251512  netellertest_JPY@neteller.com 490055    NTt3st1!
+MAD       453123727913  netellertest_MAD@neteller.com 796289    NTt3st1!
+MXN       456444237546  netellertest_MXN@neteller.com 878408    NTt3st1!
+MYR       452724116521  netellertest_MYR@neteller.com 108145    NTt3st1!
+NGN       450924006321  netellertest_NGN@neteller.com 205750    NTt3st1!
+NOK       455394172769  netellertest_NOK@neteller.com 418852    NTt3st1!
+PLN       451823629489  netellertest_PLN@neteller.com 654091    NTt3st1!
+RON       450424018097  netellertest_RON@neteller.com 860647    NTt3st1!
+RUB       455121038904  netellertest_RUB@neteller.com 888470    NTt3st1!
+SEK       453313818311  netellertest_SEK@neteller.com 173419    NTt3st1!
+SGD       451523741861  netellertest_SGD@neteller.com 316938    NTt3st1!
+TND       453523858985  netellertest_TND@neteller.com 588931    NTt3st1!
+TWD       451723748785  netellertest_TWD@neteller.com 711009    NTt3st1!
+USD       454651018446  netellertest_USD@neteller.com 270955    NTt3st1!
+ZAR       453523842837  netellertest_ZAR@neteller.com 708904    NTt3st1!
+
+
+Ips for whitelist <a name="IpsForWhitelist"></a>
+------------------------------------------------
+
+5.62.88.97 – webhooks production
+5.62.88.64/27 – whole production IP range
+206.172.46.138 – webhooks Sandbox
