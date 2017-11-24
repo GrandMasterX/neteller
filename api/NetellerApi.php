@@ -23,6 +23,12 @@ class NetellerApi
      */
     public $clientSecret;
 
+    
+    /**
+     * @var array
+     */
+    public $executionErrors = [];
+
     /**
      * @return string
      */

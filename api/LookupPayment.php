@@ -24,11 +24,6 @@ class LookupPayment extends NetellerApi
     public $expandObjects;
 
     /**
-     * @var
-     */
-    public $executionErrors;
-
-    /**
      * @param $transactionId
      * @return $this
      */
@@ -100,12 +95,5 @@ class LookupPayment extends NetellerApi
         } else {
             return false;
         }
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getExecutionErrors() {
-        return $this->executionErrors;
     }
 }

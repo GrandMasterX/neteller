@@ -13,11 +13,6 @@ class CancelSubscription extends NetellerApi
     public $subscriptionId;
 
     /**
-     * @var
-     */
-    public $executionErrors;
-
-    /**
      * @param $subscriptionId
      * @return $this
      */
@@ -61,12 +56,5 @@ class CancelSubscription extends NetellerApi
         } else {
             return false;
         }
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getExecutionErrors() {
-        return $this->executionErrors;
     }
 }

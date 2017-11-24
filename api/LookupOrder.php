@@ -13,11 +13,6 @@ class LookupOrder extends NetellerApi
     public $orderId;
 
     /**
-     * @var
-     */
-    public $executionErrors;
-
-    /**
      * @param $orderId
      * @return $this
      */
@@ -61,12 +56,5 @@ class LookupOrder extends NetellerApi
         } else {
             return false;
         }
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getExecutionErrors() {
-        return $this->executionErrors;
     }
 }

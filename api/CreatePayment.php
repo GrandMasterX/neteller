@@ -39,11 +39,6 @@ class CreatePayment extends NetellerApi
     public $expandObjects;
 
     /**
-     * @var array
-     */
-    public $executionErrors = [];
-
-    /**
      * @param $payeeProfileEmail
      * @return $this
      */
@@ -146,12 +141,5 @@ class CreatePayment extends NetellerApi
         } else {
             return false;
         }
-    }
-
-    /**
-     * @return array
-     */
-    public function getExecutionErrors() {
-        return $this->executionErrors;
     }
 }

@@ -124,11 +124,6 @@ class CreateOrder extends NetellerApi
     public $redirectUrl;
 
     /**
-     * @var array
-     */
-    public $executionErrors = [];
-
-    /**
      * @param $orderMerchantRefId
      * @return $this
      */
@@ -461,12 +456,5 @@ class CreateOrder extends NetellerApi
      */
     public function getRedirectUrl() {
         return $this->redirectUrl;
-    }
-
-    /**
-     * @return array
-     */
-    public function getExecutionErrors() {
-        return $this->executionErrors;
     }
 }

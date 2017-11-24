@@ -29,11 +29,6 @@ class LookupAllSubscriptionInvoices extends NetellerApi
     public $expandObjects;
 
     /**
-     * @var
-     */
-    public $executionErrors;
-
-    /**
      * @param $subscriptionId
      * @return $this
      */
@@ -98,12 +93,5 @@ class LookupAllSubscriptionInvoices extends NetellerApi
         } else {
             return false;
         }
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getExecutionErrors() {
-        return $this->executionErrors;
     }
 }

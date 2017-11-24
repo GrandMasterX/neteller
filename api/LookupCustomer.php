@@ -34,11 +34,6 @@ class LookupCustomer extends NetellerApi
     public $refreshToken;
 
     /**
-     * @var
-     */
-    public $executionErrors;
-
-    /**
      * @param $accountId
      * @return $this
      */
@@ -143,12 +138,5 @@ class LookupCustomer extends NetellerApi
         } else {
             return false;
         }
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getExecutionErrors() {
-        return $this->executionErrors;
     }
 }

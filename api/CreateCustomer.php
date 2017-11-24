@@ -104,11 +104,6 @@ class CreateCustomer extends NetellerApi
     public $redirectUrl;
 
     /**
-     * @var
-     */
-    public $executionErrors;
-
-    /**
      * @param $email
      * @return $this
      */
@@ -369,12 +364,5 @@ class CreateCustomer extends NetellerApi
      */
     public function getRedirectUrl() {
         return $this->redirectUrl;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getExecutionErrors() {
-        return $this->executionErrors;
     }
 }

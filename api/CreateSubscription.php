@@ -44,11 +44,6 @@ class CreateSubscription extends NetellerApi
     public $expandObjects;
 
     /**
-     * @var
-     */
-    public $executionErrors;
-
-    /**
      * @param $planId
      * @return $this
      */
@@ -161,12 +156,5 @@ class CreateSubscription extends NetellerApi
         } else {
             return false;
         }
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getExecutionErrors() {
-        return $this->executionErrors;
     }
 }

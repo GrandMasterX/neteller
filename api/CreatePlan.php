@@ -44,11 +44,6 @@ class CreatePlan extends NetellerApi
     public $currency;
 
     /**
-     * @var
-     */
-    public $executionErrors;
-
-    /**
      * @param $planId
      * @return $this
      */
@@ -155,12 +150,5 @@ class CreatePlan extends NetellerApi
         } else {
             return false;
         }
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getExecutionErrors() {
-        return $this->executionErrors;
     }
 }

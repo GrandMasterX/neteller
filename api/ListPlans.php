@@ -11,11 +11,6 @@ class ListPlans extends NetellerApi
     /**
      * @var
      */
-    public $executionErrors;
-
-    /**
-     * @var
-     */
     public $limit;
 
     /**
@@ -79,12 +74,5 @@ class ListPlans extends NetellerApi
         } else {
             return false;
         }
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getExecutionErrors() {
-        return $this->executionErrors;
     }
 }

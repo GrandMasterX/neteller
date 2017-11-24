@@ -13,11 +13,6 @@ class CancelPlan extends NetellerApi
     public $planId;
 
     /**
-     * @var
-     */
-    public $executionErrors;
-
-    /**
      * @param $planId
      * @return $this
      */
@@ -61,12 +56,5 @@ class CancelPlan extends NetellerApi
         } else {
             return false;
         }
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getExecutionErrors() {
-        return $this->executionErrors;
     }
 }

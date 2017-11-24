@@ -39,11 +39,6 @@ class RequestPayment extends NetellerApi
     public $expandObjects;
 
     /**
-     * @var array
-     */
-    public $executionErrors = [];
-
-    /**
      * @param $paymentMethodValue
      * @return $this
      */
@@ -148,12 +143,5 @@ class RequestPayment extends NetellerApi
         } else {
             return false;
         }
-    }
-
-    /**
-     * @return array
-     */
-    public function getExecutionErrors() {
-        return $this->executionErrors;
     }
 }

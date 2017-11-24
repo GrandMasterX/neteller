@@ -19,11 +19,6 @@ class ListSubscriptions extends NetellerApi
     public $offset;
 
     /**
-     * @var
-     */
-    public $executionErrors;
-
-    /**
      * @param $limit
      * @return $this
      */
@@ -79,12 +74,5 @@ class ListSubscriptions extends NetellerApi
         } else {
             return false;
         }
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getExecutionErrors() {
-        return $this->executionErrors;
     }
 }
