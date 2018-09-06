@@ -37,6 +37,11 @@ class CreatePayment extends NetellerApi
      * @var
      */
     public $expandObjects;
+    
+    /**
+     * @var
+     */
+    public $merchantFields;
 
     /**
      * @param $payeeProfileEmail
@@ -71,6 +76,15 @@ class CreatePayment extends NetellerApi
      */
     public function setTransactionMerchantRefId($transactionMerchantRefId) {
         $this->transactionMerchantRefId = $transactionMerchantRefId;
+        return $this;
+    }
+
+    /**
+     * @param $merchantFields
+     * @return $this
+     */
+    public function setMerchantFields($merchantFields) {
+        $this->merchantFields = $merchantFields;
         return $this;
     }
 
@@ -118,6 +132,10 @@ class CreatePayment extends NetellerApi
             ],
             "message"      => $this->message
         ];
+        
+        if ($this->merchantFields) {
+            $requestParams["transaction"]["merchantFields"] = $this->merchantFields;
+        }
 
         if (isset($this->expandObjects)) {
             $queryParams = ['expand' => $this->expandObjects];
